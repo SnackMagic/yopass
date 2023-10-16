@@ -34,7 +34,7 @@ const CreateSecret = () => {
     defaultValues: {
       generateDecryptionKey: true,
       secret: '',
-      onetime: true,
+      onetime: false,
     },
   });
   const [loading, setLoading] = useState(false);
