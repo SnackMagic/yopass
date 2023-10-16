@@ -12,11 +12,12 @@ export const Expiration = (props: { control: Control<any> }) => {
   const { t } = useTranslation();
   return (
     <FormControl component="fieldset" margin="dense">
-      <FormLabel component="legend">{t('expiration.legend')}</FormLabel>
+      <FormLabel component="legend" error="true">{t('expiration.legend')}</FormLabel>
+      <br />
       <Controller
         rules={{ required: true }}
         control={props.control}
-        defaultValue="3600"
+        defaultValue="604800"
         name="expiration"
         render={({ field }) => (
           <RadioGroup
@@ -48,6 +49,12 @@ export const Expiration = (props: { control: Control<any> }) => {
               control={<Radio color="primary" />}
               label={t('expiration.optionOneWeekLabel') as string}
             />
+            <FormControlLabel
+              labelPlacement="end"
+              value="2419200"
+              control={<Radio color="primary" />}
+              label={t('expiration.optionFourWeekLabel') as string}
+            />            
           </RadioGroup>
         )}
       />

@@ -39,7 +39,7 @@ const Result = ({ uuid, password, prefix, customPassword }: ResultProps) => {
       <TableContainer>
         <Table>
           <TableBody>
-            {!customPassword && (
+            {false && !customPassword && (
               <Row label={t('result.rowLabelOneClick')} value={full} />
             )}
             <Row label={t('result.rowLabelShortLink')} value={short} />

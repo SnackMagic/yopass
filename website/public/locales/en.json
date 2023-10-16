@@ -12,7 +12,8 @@
   "upload": {
     "title": "Drop file to upload",
     "caption": "File upload is designed for small files like ssh keys and certificates.",
-    "errorFileTooLarge": "File is too large"
+    "errorFileTooLarge": "File is too large",
+    "fileTooLarge": "File is too large"
   },
   "display": {
     "titleFetching": "Fetching from database, please hold...",
@@ -68,7 +69,8 @@
     "legend": "The encrypted message will be deleted automatically after",
     "optionOneHourLabel": "One Hour",
     "optionOneDayLabel": "One Day",
-    "optionOneWeekLabel": "One Week"
+    "optionOneWeekLabel": "One Week",
+    "optionFourWeekLabel": "4 Weeks"
   },
   "features": {
     "title": "Share Secrets Securely With Ease",

@@ -14,7 +14,7 @@ export const Header = () => {
       <Toolbar>
         <Link href={home} color="inherit" underline="none">
           <Typography variant="h6" component="div">
-            Yopass
+            Yopass@Stadium
             <Box
               sx={{
                 verticalAlign: 'middle',
@@ -27,6 +27,17 @@ export const Header = () => {
               alt=""
               src="yopass.svg"
             />
+            +
+            <Box
+              sx={{
+                verticalAlign: 'middle',
+                height: '40px',
+              }}
+              component="img"
+              height="40"
+              alt=""
+              src="https://sbs-production.s3.amazonaws.com/mailer_assets/stadium.png"
+            />
           </Typography>
         </Link>
         <Box
@@ -34,6 +45,7 @@ export const Header = () => {
             marginLeft: 'auto',
           }}
         >
+          
           <Button
             component={Link}
             href={isOnUploadPage ? home : upload}

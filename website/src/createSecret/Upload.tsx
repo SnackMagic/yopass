@@ -17,7 +17,7 @@ import { useForm } from 'react-hook-form';
 import { Grid, Typography } from '@mui/material';
 
 const Upload = () => {
-  const maxSize = 1024 * 500;
+  const maxSize = 1024 * 1024;
   const [error, setError] = useState('');
   const { t } = useTranslation();
   const [result, setResult] = useState({
@@ -31,7 +31,7 @@ const Upload = () => {
       generateDecryptionKey: true,
       secret: '',
       password: '',
-      expiration: '3600',
+      expiration: '604800',
       onetime: true,
     },
   });
