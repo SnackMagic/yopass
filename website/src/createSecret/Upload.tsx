@@ -32,7 +32,7 @@ const Upload = () => {
       secret: '',
       password: '',
       expiration: '604800',
-      onetime: true,
+      onetime: false,
     },
   });
 
